@@ -2,7 +2,7 @@
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
 
-function max(num1,num2){
+function max(num1,num2) {
     if (num1 > num2) {
       return num1;
     } else {
@@ -11,7 +11,6 @@ function max(num1,num2){
 }
 
 console.log(max(5,2));
-
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
@@ -29,12 +28,11 @@ function maxOfThree(num1,num2,num3) {
 
 console.log(maxOfThree(8,21,7));
 
-
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // Then, write and example of using the function.
 
-function isVowel(char){
+function isVowel(char) {
     if ((char==='a' || char==='e' || char==='e' || char==='i' || char==='o' || char==='u')) {
       return true;
     } else {
@@ -44,24 +42,35 @@ function isVowel(char){
 
 console.log(isVowel('x'));
 
-
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
 
+function sum(num1,num2) {
+  return num1 + num2;
+}
 
+console.log(sum(8,10));
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
 
+function avg(num1,num2,num3) {
+  return (num1 + num2 + num3)/2;
+}
 
+console.log(avg(5,8,10));
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
 
+function getLength(stringText) {
+  return stringText.length;
+}
 
+console.log(getLength('This counts how many characters are typed in the string including spaces.'));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
@@ -69,7 +78,15 @@ console.log(isVowel('x'));
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
 
+function greaterThan (num1,num2) {
+  if (num2 > num1) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+console.log(greaterThan(21,7));
 
 // 8.
 // Write a function called `greet` that takes a
@@ -78,7 +95,11 @@ console.log(isVowel('x'));
 // is the parameter that was passed in.
 // Then, write and example of using the function.
 
+function greet(nameOfPerson) {
+  return 'Hello, ' + nameOfPerson + '!';
+}
 
+console.log(greet('Taylor'));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -88,3 +109,9 @@ console.log(isVowel('x'));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+
+function madlib(name,noun1,noun2,month) {
+  return name + ' drew a ' + noun1 + ' on the ' + noun2 + ' in ' + month + '.';
+}
+
+console.log(madlib('Sam','puppy','wall','March'));

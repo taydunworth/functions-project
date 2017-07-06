@@ -57,7 +57,7 @@ console.log(sum(8,10));
 // Then, write and example of using the function.
 
 function avg(num1,num2,num3) {
-  return (num1 + num2 + num3)/2;
+  return (num1 + num2 + num3)/3;
 }
 
 console.log(avg(5,8,10));
